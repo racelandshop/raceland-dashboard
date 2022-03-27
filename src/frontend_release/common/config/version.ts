@@ -4,7 +4,7 @@ export const atLeastVersion = (
   minor: number,
   patch?: number
 ): boolean => {
-  if (__DEMO__) {
+  if (false) {
     return true;
   }
 

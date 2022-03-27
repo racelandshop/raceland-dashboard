@@ -32,7 +32,7 @@ class MoreInfoPerson extends LitElement {
             ></ha-map>
           `
         : ""}
-      ${!__DEMO__ &&
+      ${!false &&
       this.hass.user?.is_admin &&
       this.stateObj.state === "not_home" &&
       this.stateObj.attributes.latitude &&

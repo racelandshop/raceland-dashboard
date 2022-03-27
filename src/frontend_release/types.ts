@@ -16,7 +16,7 @@ import { ExternalMessaging } from "./external_app/external_messaging";
 declare global {
   /* eslint-disable no-var, no-redeclare */
   var __DEV__: boolean;
-  var __DEMO__: boolean;
+  var false: boolean;
   var __BUILD__: "latest" | "es5";
   var __VERSION__: string;
   var __STATIC_PATH__: string;

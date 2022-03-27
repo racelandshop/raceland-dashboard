@@ -24,7 +24,7 @@ export const urlSyncMixin = <
   superClass: T
 ) =>
   // Disable this functionality in the demo.
-  __DEMO__
+  false
     ? superClass
     : class extends superClass {
         private _ignoreNextPopState = false;

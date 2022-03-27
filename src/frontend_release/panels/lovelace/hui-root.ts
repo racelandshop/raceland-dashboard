@@ -158,7 +158,7 @@ class HUIRoot extends LitElement {
                       )}
                       .path=${mdiDotsVertical}
                     ></ha-icon-button>
-                    ${__DEMO__ /* No unused entities available in the demo */
+                    ${false /* No unused entities available in the demo */
                       ? ""
                       : html`
                           <mwc-list-item
@@ -190,7 +190,7 @@ class HUIRoot extends LitElement {
                         "ui.panel.lovelace.editor.menu.raw_editor"
                       )}
                     </mwc-list-item>
-                    ${__DEMO__ /* No config available in the demo */
+                    ${false /* No config available in the demo */
                       ? ""
                       : html`<mwc-list-item
                             graphic="icon"

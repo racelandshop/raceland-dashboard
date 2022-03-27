@@ -19,7 +19,7 @@ import {
 import "./ha-init-page";
 import "./home-assistant-main";
 
-const useHash = __DEMO__;
+const useHash = false;
 const curPath = () =>
   useHash ? location.hash.substring(1) : location.pathname;
 

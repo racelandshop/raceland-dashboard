@@ -5,7 +5,7 @@ import { mainWindow } from "./dom/get_main_window";
 declare global {
   // for fire event
   interface HASSDomEvents {
-    "location-changed": NavigateOptions;
+    "location-changed": { replace: boolean };
   }
 }
 
@@ -21,7 +21,7 @@ export const navigate = (path: string, options?: NavigateOptions) => {
     return;
   }
 
-  if (__DEMO__) {
+  if (false) {
     if (replace) {
       mainWindow.history.replaceState(
         mainWindow.history.state?.root ? { root: true } : null,

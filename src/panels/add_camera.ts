@@ -1,9 +1,11 @@
 import { css, CSSResultGroup, html, LitElement } from "lit";
 import { customElement, property, state } from "lit/decorators";
+import { HomeAssistant } from "custom-card-helpers";
+
 
 @customElement("raceland-dashboard-add-cameras")
 class RacelandDashboardAddCameras extends LitElement {
-    //@property() public hass!: HomeAssistant;
+    @property() public hass!: HomeAssistant;
 
 
     protected render() {

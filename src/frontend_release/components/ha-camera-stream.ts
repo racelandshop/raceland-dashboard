@@ -74,9 +74,9 @@ class HaCameraStream extends LitElement {
     if (!this.stateObj) {
       return html``;
     }
-    if (__DEMO__ || this._shouldRenderMJPEG) {
+    if (false || this._shouldRenderMJPEG) {
       return html` <img
-        .src=${__DEMO__
+        .src=${false
           ? this.stateObj.attributes.entity_picture!
           : this._connected
           ? computeMJPEGStreamUrl(this.stateObj)

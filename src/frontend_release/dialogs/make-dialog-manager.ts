@@ -5,7 +5,7 @@ import { ProvideHassElement } from "../mixins/provide-hass-lit-mixin";
 declare global {
   // for fire event
   interface HASSDomEvents {
-    "show-dialog": ShowDialogParams<unknown>;
+    "show-dialog": {};
     "close-dialog": undefined;
     "dialog-closed": DialogClosedParams;
   }

@@ -3,8 +3,8 @@ import { customElement, property } from "lit/decorators";
 import { RacelandRouterPage, RouterOptions } from "./raceland_dashboard_router_page";
 import { HomeAssistant } from "custom-card-helpers"
 
-@customElement("developer-tools-router")
-class RacelandToolsRouter extends RacelandRouterPage {
+@customElement("raceland-dashboard-router")
+class RacelandDashboardRouter extends RacelandRouterPage {
   @property({ attribute: false }) public hass!: HomeAssistant;
 
   @property() public narrow!: boolean;
@@ -21,9 +21,13 @@ class RacelandToolsRouter extends RacelandRouterPage {
     cacheAll: true,
     showLoading: true,
     routes: {
-      event: {
-        tag: "Add Camera", //TODO: translate?
+      add_camera: {
+        tag: "add-camera", //TODO: translate?
         load: () => import("./panels/add_camera"),
+      },
+      add_camera_2: {
+        tag: "add-camera2", //TODO: translate?
+        load: () => import("./panels/add_camera_2"),
       },
     },
   };
@@ -56,6 +60,6 @@ class RacelandToolsRouter extends RacelandRouterPage {
 
 declare global {
   interface HTMLElementTagNameMap {
-    "raceland-dashboard-router": RacelandToolsRouter;
+    "raceland-dashboard-router": RacelandDashboardRouter;
   }
 }
